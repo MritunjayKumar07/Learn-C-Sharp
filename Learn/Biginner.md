@@ -6,8 +6,9 @@
     - C# has roots from the C family, and the language close popular languages like C++ and Java.
     - The 1th version was released in year 2002.
     - C# used for Mobile applications, Desktop applications, Web applications, Web services, Web sites, Games, VR, Database applications, And much, much more!
-
-2. Basic Syntax and Structure:
+![C-Sharp Compilation and execution process](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/4b81fc71-ce19-44bb-a59f-24c1219f01d2)
+2. Basic Syntax and
+ Structure:
     - Example of 'Hello World' program.
         ```C#
         using System;
@@ -536,3 +537,62 @@ Example: Pattern Matching with Additional Conditions:
 - The `continue` statement breaks one `iteration` (in the loop), if a `specified condition occurs`, and `continues with the next iteration in the loop`.    
 
 21. Array:
+#### Bassic:
+- Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+- To declare an array, define the variable type with `square brackets` like `string[] cars;`.
+- To insert values to it, we can use an array literal-place the values in a comma-separated list, inside curly braces.
+- Example:
+    ```
+        C#string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        int[] myNum = {10, 20, 30, 40};
+        Console.WriteLine(cars[0]); //Extract the value
+        cars[0] = "Opel"; //Replace the value
+        Console.WriteLine(cars.Length); //Find the length os array. Output is 4
+    ```
+- Other way to create an array.
+- Example:
+    ```C#
+        // Create an array with declear size and add values later.
+        string[] cars = new string[4];
+        
+        // Create an array with declear size and add values same time. 
+        string[] cars = new string[4] {"Volvo", "BMW", "Ford", "Mazda"};
+        
+        // Create an array without specifying the size .
+        string[] cars = new string[] {"Volvo", "BMW", "Ford", "Mazda"};
+        
+        // Create an array without using the new keyword, and without specifying the size.
+        string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        
+        // Declare an array
+        string[] cars;
+        cars = new string[] {"Volvo", "BMW", "Ford"};// Add values, using new
+        cars = {"Volvo", "BMW", "Ford"};// Give error.
+    ```
+- If you declare an array and initialize it later, you have to use the new keyword:
+#### Loop an Array:
+- Using for loop:
+```C#
+    string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (int i = 0; i < cars.Length; i++) 
+    {
+      Console.WriteLine(cars[i]);
+    }
+```
+- Using foreach loop:
+    - Syntex:
+    ```C#
+        foreach (type variableName in arrayName) 
+        {
+          // code block to be executed
+        }
+    ```
+    - Example:
+    ```C#
+        string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        foreach (string i in cars) 
+        {
+          Console.WriteLine(i);
+        }
+        //foreach also work in string.
+    ```    
