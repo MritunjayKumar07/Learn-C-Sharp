@@ -35,15 +35,28 @@
  Structure:
     - Example of 'Hello World' program.
         ```C#
-        using System;
-        class HelloWorld
-        {
-            static void Main()
-            {
-                Console.WriteLine("Hello World!");
+            using System;
+            
+                namespace MyApplication
+                {
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        Console.WriteLine("Hello");
+                    }
+                }
             }
-        }
         ```
+    - `namespace` is a collection of related class and interfaces.
+    - `using` is a keyword which used to import namespace or liberaries.
+    - `System` is a root namespace in C#.
+    - `namespace` is a keyword which is uded to create our own namespace.
+    - `Main` `Method` is the `entry point` of C# program.
+    - `Namespace` contain class & class contain `method` and method contain code(source-code).
+    - `static` is use to create the `object`. In side the `object`, `Main method` is available `in this example`.
+    - `string[] args` is called as command line arguments.
+    -
 
 3. Basic Data Types:
     - `int` (4 bytes) and (-2<spu>31</sup> to 2<sup>31</sup> -1 Range).
