@@ -78,6 +78,8 @@
     - Solution is the collection of Project -> Project is a collection of item's (item's mins lot of things available like classe's, structure, enum, interfasess, windows form's, web form's and etc).
     - `Console.WriteLine("Hello");` use to print the statment's, `Console` is `class` whic come from `System namespace`.
     - To create `class` under the `project` then you need to add `new item` (all the things which is in project called `new item`) then write click on `Project` and click on `add` next `new item`,
+      ![Create new items in c-sharp](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/50461145-4ae6-4f73-9708-4e592847b867)
+
     
 
 3. Basic Data Types:
