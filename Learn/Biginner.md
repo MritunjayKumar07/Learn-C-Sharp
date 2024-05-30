@@ -1,4 +1,10 @@
-# Learn C# Biginner Level
+# Learn C#.NET Biginner Level
+## .NET 
+- .NET have no any fullform and not defination, Then what is dotnet mins `It is a software which come from Microsoft Which use develope the various kind of application` like Mobile appliction, Desktop application, Web application.
+- Under .NET microsoft provide and support morethan 60 programming language's.
+- Micosoft build the .NET software for any programming language background person come and use the .NET to build the application.
+- Visual Stdio is a IDE use for developing .NET application.
+
 ## Order of Compilation and execution process
 ![C-Sharp Compilation and execution process](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/4b81fc71-ce19-44bb-a59f-24c1219f01d2)
 
@@ -26,9 +32,9 @@
         
 ## Beginner Level
 1. What is C#?:
-    - A modern, Object-oriented programming language developed by Microsoft.
-    - It's a Part of the .NET framework Or C# run on .NET Framework.
-    - C# has roots from the C family, and the language close popular languages like C++ and Java.
+    - C#.NET (`C-Sharp`) bellong from C++ background or you say (C# is a extension of C++ language). But C++ only use for build desktop application and (`C-Sharp`) use to build any type of application.
+    - `C-Sharp` is a Object Oriented, Platform Independent & Language Independent.
+    - C# a Part of the .NET framework or run on .NET Framework.
     - The 1th version was released in year 2002.
     - C# used for Mobile applications, Desktop applications, Web applications, Web services, Web sites, Games, VR, Database applications, And much, much more!
 2. Basic Syntax and
@@ -48,15 +54,20 @@
                 }
             }
         ```
+    
+    - `namespace` is a logical container of types (`logical container` mins generaly we group the item's it mins a grouping of files contain by folder and the folder is `logical container` because file having size and main containe that way we say `physical` but the folder in Operating System not having any size thay way we say `logical` ).
+    - In `programming language` basicaly `namespace` is also a `logiacal container` because it's `contain classe's`, `a group of classe's is called namespace`.
     - `namespace` is a collection of related class and interfaces.
-    - `using` is a keyword which used to import namespace or liberaries.
-    - `System` is a root namespace in C#.
+    - Bydefault when we create the project the project name is `namespace`, you can change also.
+    - `class Program`: This line mins when we create the project automaticaly one predefine file is created in project and the file name is `Program.cs`, thats way bydefault one class `Program` create and name is same as a file name .
+    - `class Program` it mining i create a class name is Program.
+    - `using` is a keyword which used to import `namespace` or `liberaries`. All the class define under the namespacesse's.
+    - `System is a root namespace in C#`, in this namespacesse's more than 100 of class containe and by using this `using System` we consume all classe's.
     - `namespace` is a keyword which is uded to create our own namespace.
-    - `Main` `Method` is the `entry point` of C# program.
+    - `Main` is the `Method` which is the `entry point` of C# program.
     - `Namespace` contain class & class contain `method` and method contain code(source-code).
     - `static` is use to create the `object`. In side the `object`, `Main method` is available `in this example`.
     - `string[] args` is called as command line arguments.
-    -
 
 3. Basic Data Types:
     - `int` (4 bytes) and (-2<spu>31</sup> to 2<sup>31</sup> -1 Range).
