@@ -69,10 +69,11 @@
     - `static` is use to create the `object`. In side the `object`, `Main method` is available `in this example`.
     - `string[] args` is called as command line arguments.\
       
-   - Let's discuss project structure.
-     
-![File structure in C# NET](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/546ed130-bbb4-4487-a51d-e75707052bb5)
-    - This is `Solutin explorare`, Why we say solutin explorare because it's root elements is solutin. Also IDE say Solution explprer.
+   - Let's discuss `Solutin explorare`.
+   
+     ![File structure in C# NET](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/8cc73bb0-c677-44b1-8003-42ceaa91f573)
+
+    - This is `Solutin explorare`, Why we say solutin explorare because it's root elements. Also IDE say Solution explprer.
     - Under `Solutin explorare` one solution is available and the name is `Learn`. And `Learn solutin` contain one project and its name is `Learn`. You can add multiple project's in `Learn Solution`.
     - And the project contain one class the name is `Program` in side `Program.cs` file.
     - Solution is the collection of Project -> Project is a collection of item's (item's mins lot of things available like classe's, structure, enum, interfasess, windows form's, web form's and etc.).
