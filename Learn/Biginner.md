@@ -67,7 +67,11 @@
     - `Main` is the `Method` which is the `entry point` of C# program.
     - `Namespace` contain class & class contain `method` and method contain code(source-code).
     - `static` is use to create the `object`. In side the `object`, `Main method` is available `in this example`.
-    - `string[] args` is called as command line arguments.
+    - `string[] args` is called as command line arguments.\
+      
+   - Let's discuss file structure.
+     
+![File structure in C# NET](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/546ed130-bbb4-4487-a51d-e75707052bb5)
 
 3. Basic Data Types:
     - `int` (4 bytes) and (-2<spu>31</sup> to 2<sup>31</sup> -1 Range).
