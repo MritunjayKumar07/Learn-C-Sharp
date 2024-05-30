@@ -64,19 +64,21 @@
     - `using` is a keyword which used to import `namespace` or `liberaries`. All the class define under the namespacesse's.
     - `System is a root namespace in C#`, in this namespacesse's more than 100 of class containe and by using this `using System` we consume all classe's.
     - `namespace` is a keyword which is uded to create our own namespace.
-    - `Main` is the `Method` which is the `entry point` of C# program.
+    - `Main` is the `Method` which is the `entry point` of C# program. You cannot make more then one `Main` method in one project's.
     - `Namespace` contain class & class contain `method` and method contain code(source-code).
     - `static` is use to create the `object`. In side the `object`, `Main method` is available `in this example`.
-    - `string[] args` is called as command line arguments.\
+    - `string[] args` is called as command line arguments.
       
-   - Let's discuss `Solutin explorare`.
-   
+   ### Let's discuss `Solutin explorare`.
      ![File structure in C# NET](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/8cc73bb0-c677-44b1-8003-42ceaa91f573)
 
-    - This is `Solutin explorare`, Why we say solutin explorare because it's root elements. Also IDE say Solution explprer.
+    - This is `Solutin explorare`, Why we say solutin explorare because it's root elements. Also IDE say Solution explprer. To open `Solutin explorare` press `ctrl + alt + L`.
     - Under `Solutin explorare` one solution is available and the name is `Learn`. And `Learn solutin` contain one project and its name is `Learn`. You can add multiple project's in `Learn Solution`.
     - And the project contain one class the name is `Program` in side `Program.cs` file.
-    - Solution is the collection of Project -> Project is a collection of item's (item's mins lot of things available like classe's, structure, enum, interfasess, windows form's, web form's and etc.).
+    - Solution is the collection of Project -> Project is a collection of item's (item's mins lot of things available like classe's, structure, enum, interfasess, windows form's, web form's and etc).
+    - `Console.WriteLine("Hello");` use to print the statment's, `Console` is `class` whic come from `System namespace`.
+    - To create `class` under the `project` then you need to add `new item` (all the things which is in project called `new item`) then write click on `Project` and click on `add` next `new item`,
+    
 
 3. Basic Data Types:
     - `int` (4 bytes) and (-2<spu>31</sup> to 2<sup>31</sup> -1 Range).
