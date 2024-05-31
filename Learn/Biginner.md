@@ -36,6 +36,7 @@
     - `C-Sharp` is a Object Oriented, Platform Independent & Language Independent.
     - C# a Part of the .NET framework or run on .NET Framework.
     - The 1th version was released in year 2002.
+    - C# is case sensitive language.
     - C# used for Mobile applications, Desktop applications, Web applications, Web services, Web sites, Games, VR, Database applications, And much, much more!
 2. Basic Syntax and
  Structure:
@@ -98,6 +99,8 @@
         2. Go to` Startup object ` and next sellect your class.
         3. Run it.
         
+   ![How to run anothe class in C-sharp project](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/de48a0bd-5a66-4d8f-a2ae-16f5926834f3)
+        4. If You want to run any `Class` you can run it but one thing's are mandatory in side of class `Main` methid is mandatory.
 
 3. Basic Data Types:
     - `int` (4 bytes) and (-2<spu>31</sup> to 2<sup>31</sup> -1 Range).
