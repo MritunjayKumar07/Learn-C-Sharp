@@ -79,7 +79,25 @@
     - `Console.WriteLine("Hello");` use to print the statment's, `Console` is `class` whic come from `System namespace`.
     - To create `class` under the `project` then you need to add `new item` (all the things which is in project called `new item`) then write click on `Project` and click on `add` next `new item`,
       ![Create new items in c-sharp](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/50461145-4ae6-4f73-9708-4e592847b867)
-    - 2:25:30
+    - You change the code in side of `MyClass` like that to run it.
+        ```C#
+            using System;
+            namespace Learn
+            {
+                internal class MyClass //It's also a main class because of inside that Main method available.
+                {
+                    static void Main()
+                    {
+                        Console.WriteLine("My Second Class !.");
+                    }
+                }
+            }
+        ```
+    - But if you want to run this class it give you error, Because we cannot told the Visual Stdio which `main class` i want to execute, thats way i want to told the visual stdio to run `MyClass`, Then follow this stape.
+        1. Double click on `Properties` which in your project.
+        2. Go to` Startup object ` and next sellect your class.
+        3. Run it.
+        
 
 3. Basic Data Types:
     - `int` (4 bytes) and (-2<spu>31</sup> to 2<sup>31</sup> -1 Range).
