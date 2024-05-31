@@ -33,7 +33,7 @@
 ## Beginner Level
 1. What is C#?:
     - C#.NET (`C-Sharp`) bellong from C++ background or you say (C# is a extension of C++ language). But C++ only use for build desktop application and (`C-Sharp`) use to build any type of application.
-    - `C-Sharp` is a Object Oriented, Platform Independent & Language Independent.
+    - `C-Sharp` is a OOP's (`Object Oriented`), Platform Independent & Language Independent.
     - C# a Part of the .NET framework or run on .NET Framework.
     - The 1th version was released in year 2002.
     - C# is case sensitive language.
@@ -101,7 +101,194 @@
         
    ![How to run anothe class in C-sharp project](https://github.com/MritunjayKumar07/Learn-C-Sharp/assets/144582396/de48a0bd-5a66-4d8f-a2ae-16f5926834f3)
         4. If You want to run any `Class` you can run it but one thing's are mandatory in side of class `Main` methid is mandatory.
+   ### Constructor.
+    - OOP's (`Object Oriented`) mins every types of code written in inside of `classe's`.And class contain lot of things like field's, method's, construcor and etc.
+    - `Constructor Defination`: It's a `Method` which is `responsible` for `initializing the variable of that class` and `instance`(it mins you create object of class and object name is same name of class) of the class.
+    - I told you `constructor is method` it mins it's take name, then we give a name and the name shood be `exactly same` as `class name` is mandatory another wize you got error.
+    - `Constructor` does not return any value.
+    - `Each & every class requires` this constructor if you want to create the `instance`(it mins you create object of class and object name is same name of class) of the class inside the class then you need constructor.
+    Syntex of creating explicit constructor:-`[<modifiers>] <Name of Class> (<parameter list>){//Code}`.
+    Example:-
+    ```C#
+        using System;
+            namespace Learn
+            {
+                class Program
+                {
+                    //explicit constructor create:-
+                    public Program()
+                    {
+                        Console.WriteLine("Explicit constructor Called");
+                    }
+                    /*
+                        - public is modifiers. 
+                        - Program is Name of Class. 
+                        - We not pass any parameter hear. 
+                        - Console.WriteLine("Explicit constructor Called"); is code. 
+                    */
+ 
+                    static void Main(string[] args) 
+                    {
+                        //Creating multiple time instance of Class or you can also make one one time.
+                        Program obj = new Program(); //Create the instance of Class.
+                        Program obj1 = new Program(); //Create the instance of Class.
+                        Program obj2 = new Program(); //Create the instance of Class.
+                    }
+                }
+        }
+    ``` 
+    - If you not create the `constructor` inside the class then compiler create the `implicit constructor` inside the class. And all variable you decleared inside the class automatically inslized by implicit constructor.
+    ```C#
+        class MyClass
+        {
+            int i; string s; bool b;
+            public MyClass()  //create automatically implicit constructor by compiler . You cannot see this constructor. and byDefault it's public
+            {
+                i = 0;
+                s = null;
+                b = false; 
+            }
+        }
+    ``` 
+    ```C#
+        using System;
+            namespace Learn
+            {
+                class Program
+                {
+                    int i; string s; bool b;
+                    static void Main(string[] args) 
+                    {
+                        //implicit constructor:-
+                        Program p = new Learn.Program(); // Calling the implicit constructor. Syntex:-<Class Name> <variable>  = new <namespacename>.<constructor>
+                        Console.WriteLine("Value of i: "+ p.i + " Value of s: "+ p.s + " Value of b: "+ p.b);  //Automaticaly inslize the value by default implicit constructor, You get the output like that :- Value of i: 0 Value of s: null Value of b: false
+                    }
+                }
+        }
+    ``` 
+    - `Implicit constructor` are `parameter less construtor` this type of constructor also know as `default constructor`.
+    - `Implicit constructor` is only a `public constructor`.
+    - Those constructor whic is define by you which is inside the class are called `explicit constructor`. 
+    - `explicit constructor` are `parameteriz` also.
+    - Difference bitween `defining constructor` and `calling constructor`:- Difference is two type or way `Implicit` & `Explicit` but calling in only one way `Explicit` like that only `Program p = new Program();`.
+    - Syntex of calling constructor :- `<Class Name> <variable>  = new <constructor>`
+    - If you want to `create only instance` without `creating constructor`, you can create it like that but outside of class.
+    ```C#
+        class MyClass
+        {
+            int i;
+        }
+        MyClass obj = new MyClass(); / /Like that you create instance of class without creating any constructor.
+    ```
+   ### Types of Constructor
+    1. Default or Parameter less constructor.
+    2. Parmetrized Constructor.
+    3. Copy Constructor.
+    4. Static Constructor.
+   #### 1. Default or Parameter less constructor :-
+    - If a constructor method cannot take any parameters then we call `default or parameter less constructor`.
+    - If you define the constructor like that `public MyClass();` in inside the class, that is also called as a `Implicit Constructor` or `Default Constructor` or `Parameterless Constructor`.
+   #### 2. Parmetrized Constructor :- 
+    - If a constructor method is defined with parameter by programmer are called `parametrize constructor`. And the constructor is define `explicit constructor` not `implicit constructor`.
+    - Example:-
+    ```C#
+        using System;
+            namespace Learn
+            {
+                class Program
+                {
+                    public Program(int i)
+                    {
+                        Console.WriteLine("parametrize constructor "+ i);
+                    }
+                    static void Main(string[] args) 
+                    {
+                        Program pc = new Program(15); //Output is :- parametrize constructor 10
+                    }
+                }
+        }
+    ```
 
+    ```C#
+        using System;
+            namespace Learn
+            {
+                class Program
+                {
+                    int x;
+                    public Program(int i)
+                    {
+                        Console.WriteLine("parametrize constructor "+ i);
+                    }
+                    public void Display()
+                    {
+                        Console.WriteLine("Vale of x is: "+ x);
+                    }
+                    static void Main(string[] args) 
+                    {
+                        Program pc = new Program(15); //Output is :- parametrize constructor 15
+                        //If you not inslize the value in `x` then compiler get the responsiblity to inslize the valu in `x` by `Implicitly`.
+                        pc.Display(); //Output is :- Vale of x is: 0
+                    }
+                }
+        }
+    ```
+    - If you not inslize the value in `x` then compiler get the responsiblity to inslize the valu in `x` by `Implicitly`.
+   ```C#
+        using System;
+            namespace Learn
+            {
+                class Program
+                {
+                    int x;
+                    public Program(int i)
+                    {
+                        x = i;// By your define constructor it inslize the value.
+                        Console.WriteLine("parametrize constructor "+ i);
+                    }
+                    public void Display()
+                    {
+                        Console.WriteLine("Vale of x is: "+ x);
+                    }
+                    static void Main(string[] args) 
+                    {
+                        Program pc = new Program(15); //you send the value in constructor. Output is :- parametrize constructor 15
+                        pc.Display(); //Output is :- Vale of x is: 15
+                    }
+                }
+        }
+    ```
+    - Hear allocate two place value(Get two coppy or instace of x in pc and pc1).
+   ```C#
+        using System;
+            namespace Learn
+            {
+                class Program
+                {
+                    int x;
+                    public Program(int i)
+                    {
+                        x = i;// By your define constructor it inslize the value.
+                        Console.WriteLine("parametrize constructor "+ i);
+                    }
+                    public void Display()
+                    {
+                        Console.WriteLine("Vale of x is: "+ x);
+                    }
+                    static void Main(string[] args) 
+                    {
+                        // Hear allocate two place value(Get two coppy or instace of x in pc and pc1).
+                        Program pc = new Program(15); //Output is :- parametrize constructor 15
+                        Program pc1 = new Program(19); //Output is :- parametrize constructor 19
+                        pc.Display(); //Output is :- Vale of x is: 15
+                        pc1.Display(); //Output is :- Vale of x is: 19
+                    }
+                }
+        }
+    ```
+   #### 3. Copy Constructor :- 
+    - 4:13:35
+   #### 4. Static Constructor :- 
 3. Basic Data Types:
     - `int` (4 bytes) and (-2<spu>31</sup> to 2<sup>31</sup> -1 Range).
     - `long` (8 bytes) and (-2<spu>63</sup> to 2<sup>63</sup> -1 Range).
